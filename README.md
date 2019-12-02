@@ -23,6 +23,9 @@ Currently, we are open for the addition of new features. If you'd like a new fea
 ## Bugs
 We are aware of some bugs that can occur. If you think you found a new one or you can help to fix an existing bug, please open an issue or pull request.
 
+## Problems?
+Some problems only occur on 1 browser. Please check the compatibility sheet to check whether your browser is supported. Some had too many unfixable issues so support has been cut.
+
 ## Goal
 
 When I started development, I didn't know anything about coding (HTML, CSS, JavaScript...). That's why it took me about a year to make this. With the help of many school students, we cleaned up the code and implemented some fun features.
