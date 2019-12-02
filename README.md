@@ -1,0 +1,33 @@
+# Infonet HyperText
+
+A billboard like system for schools.
+
+## Installation
+
+Download the .zip file, extract it to where you want to install it and open Infonet Console.html.
+
+## Usage
+
+Open Infonet Console anytime you want, select a mode, watch it work.
+
+## Features
+There are many features that might not be needed, you can just open the code and remove the feature to disable it.
+
+Eg. There's a script called HyperTextTheme(); that changes the background depending on the time of day. In the main HTML file, you can disable it by removing it from the <body onload="...."> tag.
+
+Infonet HyperText is highly customizable and adjustable. All code is well documented making for easy learning and customization.
+
+## Contributing
+Currently, we are open for the addition of new features. If you'd like a new feature and we think it fit's the theme, we will implement it as good as possible.
+
+## Bugs
+We are aware of some bugs that can occur. If you think you found a new one or you can help to fix an existing bug, please open an issue or pull request.
+
+## Goal
+
+When I started development, I didn't know anything about coding (HTML, CSS, JavaScript...). That's why it took me about a year to make this. With the help of many school students, we cleaned up the code and implemented some fun features.
+
+We hope this project sparks interest in coding with someone. It's been a fun journey and we hope someone else will make something great when they get inspiration from this project.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
