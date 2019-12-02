@@ -30,4 +30,4 @@ When I started development, I didn't know anything about coding (HTML, CSS, Java
 We hope this project sparks interest in coding with someone. It's been a fun journey and we hope someone else will make something great when they get inspiration from this project.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
