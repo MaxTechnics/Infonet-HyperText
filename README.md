@@ -35,7 +35,7 @@ We hope this project sparks interest in coding with someone. It's been a fun jou
 ## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
 
-##Try it!
+## Try it!
 
 You can see what Infonet looks like right now. This page also gets updated before a new version is published to GitHub. So you can check here what's cookin'.
 
