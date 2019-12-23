@@ -38,4 +38,5 @@ We hope this project sparks interest in coding with someone. It's been a fun jou
 ##Try it!
 
 You can see what Infonet looks like right now. This page also gets updated before a new version is published to GitHub. So you can check here what's cookin'.
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e9bc47ae-6544-4c26-9376-916bd647fbe3/deploy-status)](https://app.netlify.com/sites/infonet/deploys)
