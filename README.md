@@ -38,9 +38,9 @@ Supported browsers:
  - [x] Firefox
  - [x] Chrome
  - [x] Chromium
- - [] Opera (Untested)
- - [] Edge (Edge is not supported, New edge is untested)
- - [] Internet Explorer
+ - [ ] Opera (Untested)
+ - [ ] Edge (Edge is not supported, New edge is untested)
+ - [ ] Internet Explorer
 
 ## Used libraries/tools
 ### Tools
@@ -62,6 +62,3 @@ We hope this project sparks interest in coding with someone. It's been a fun jou
 
 ## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
-
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e9bc47ae-6544-4c26-9376-916bd647fbe3/deploy-status)](https://app.netlify.com/sites/infonet/deploys)
