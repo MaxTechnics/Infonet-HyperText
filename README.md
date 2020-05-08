@@ -10,6 +10,7 @@
   <a><img src="https://img.shields.io/github/forks/MaxTechnics/Infonet-HyperText?label=Forks" alt="Forks"></a>
   <a><img src="https://img.shields.io/github/stars/MaxTechnics/Infonet-HyperText?style=Stars" alt="Stars"></a>
   <a><img src="https://img.shields.io/github/watchers/MaxTechnics/Infonet-HyperText?label=Watchers" alt="Watchers"></a>
+  <a><img src="https://img.shields.io/netlify/b03dea6b-b59c-4112-a0ba-89469d96acd2" alt"Netlify"></a>
 </p>
   
 ## Installation
@@ -62,8 +63,5 @@ We hope this project sparks interest in coding with someone. It's been a fun jou
 ## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
 
-## Try it!
-
-You can see what Infonet looks like right now. This page also gets updated before a new version is published to GitHub. So you can check here what's cookin'.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e9bc47ae-6544-4c26-9376-916bd647fbe3/deploy-status)](https://app.netlify.com/sites/infonet/deploys)
