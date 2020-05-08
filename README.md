@@ -1,25 +1,14 @@
 # Infonet HyperText
-<p align="center">
-  <a><img src="https://img.shields.io/github/repo-size/MaxTechnics/Infonet-HyperText" alt="Repository size"></a>
-  <a><img src="https://img.shields.io/github/languages/code-size/MaxTechnics/Infonet-HyperText" alt="Code size"></a>
-  <a><img src="https://img.shields.io/github/downloads/MaxTechnics/Infonet-HyperText/total" alt="Downloads"></a>
-  <a><img src="https://img.shields.io/github/issues/MaxTechnics/Infonet-HyperText" alt="Issues"></a>
-  <a><img src="https://img.shields.io/github/issues-closed/MaxTechnics/Infonet-HyperText" alt="Closed issues"></a>
-  <a><img src="https://img.shields.io/discord/592103938958819341?label=Discord&logo=Discord" alt="Discord"></a>
-  <a><img src="https://img.shields.io/github/followers/MaxTechnics" alt="Followers"></a>
-  <a><img src="https://img.shields.io/github/forks/MaxTechnics/Infonet-HyperText?label=forks" alt="Forks"></a>
-  <a><img src="https://img.shields.io/github/stars/MaxTechnics/Infonet-HyperText?style=Stars" alt="Stars"></a>
-  <a><img src="https://img.shields.io/github/watchers/MaxTechnics/Infonet-HyperText?label=watchers" alt="Watchers"></a>
-  <a><img src="https://img.shields.io/netlify/b03dea6b-b59c-4112-a0ba-89469d96acd2" alt"Netlify"></a>
-</p>
   
-## Installation
+## Goal
 
-Download the .zip file, extract it to where you want to install it and open Infonet Console.html.
+When I started development, I didn't know anything about coding (HTML, CSS, JavaScript...). That's why it took me about a year to make this. With the help of many school students, we cleaned up the code and implemented some fun features.
 
-## Usage
+We hope this project sparks interest in coding with someone. It's been a fun journey and we hope someone else will make something great when they get inspiration from this project.
 
-Open Infonet Console anytime you want, select a mode, watch it work.
+## Installation and usage
+
+Download the master branch or release .zip file, extract it to where you want to install it and open Infonet Console.html. Select any mode or create a new one and you're done.
 
 ## Features
 Infonet HyperText is highly customizable and adjustable. All code is well documented making for easy learning and customization.
@@ -44,8 +33,8 @@ Supported browsers:
 
 ## Used libraries/tools
 ### Tools
-- Brackets
-- Visual Studio Code
+- [Brackets](https://github.com/adobe/brackets)
+- [Visual Studio Code](https://github.com/microsoft/vscode)
 ### Libraries
 - [Bitday](https://www.reddit.com/r/wallpapers/comments/1tqe9k/update_new_version_of_the_8bit_day_wallpaper_set/)
 - [SweetAlert](https://github.com/sweetalert2/sweetalert2)
@@ -53,12 +42,6 @@ Supported browsers:
 
 ## Interactive Guide
 The Interactive Guide is based on 2 projects by [Codrops](https://github.com/codrops)
-
-## Goal
-
-When I started development, I didn't know anything about coding (HTML, CSS, JavaScript...). That's why it took me about a year to make this. With the help of many school students, we cleaned up the code and implemented some fun features.
-
-We hope this project sparks interest in coding with someone. It's been a fun journey and we hope someone else will make something great when they get inspiration from this project.
 
 ## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
