@@ -2,7 +2,7 @@
   
 ## Goal
 
-When I started development, I didn't know anything about coding (HTML, CSS, JavaScript...). That's why it took me about a year to make this. With the help of many school students, we cleaned up the code and implemented some fun features.
+When I started development, I didn't know anything about coding (HTML, CSS, JavaScript...). That's why it took me about a year to make the base version. With the help of many school students, we cleaned up the code, made everything more efficient and implemented some fun features.
 
 We hope this project sparks interest in coding with someone. It's been a fun journey and we hope someone else will make something great when they get inspiration from this project.
 
