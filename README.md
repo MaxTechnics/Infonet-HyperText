@@ -13,6 +13,7 @@ Download the master branch or release .zip file, extract it to where you want to
 ## Features
 Infonet HyperText is highly customizable and adjustable. All code is well documented making for easy learning and customization.
 If there's a feature you would like to disable, you can remove it from the code, if there are any problems in doing so, just open an issue and I'll help.
+There's also an interactive guide based on 2 projects by [Codrops](https://github.com/codrops). Please note that this is Dutch only!
 
 ## Contributing
 Currently, we are open for the addition of new features. If you'd like a new feature and we think it fit's the scheme, you can open an issue.
@@ -39,9 +40,6 @@ Supported browsers:
 - [Bitday](https://www.reddit.com/r/wallpapers/comments/1tqe9k/update_new_version_of_the_8bit_day_wallpaper_set/)
 - [SweetAlert](https://github.com/sweetalert2/sweetalert2)
 - [WarpSpeed.js](https://github.com/adolfintel/warpspeed)
-
-## Interactive Guide
-The Interactive Guide is based on 2 projects by [Codrops](https://github.com/codrops)
 
 ## License
 [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
