@@ -5,7 +5,7 @@
   //  Infonet HyperText Update Notifier   //
  // Entirely written by Maxim Coppieters //
 //////////////////////////////////////////
-var currentVersion = 46
+var currentVersion = 47
 var latestVersion = 0
 setTimeout(() => {
   if (latestVersion == currentVersion) {
@@ -342,7 +342,7 @@ document.onkeydown = function(e) {
 
 // Change the loading text every x seconds
 // List of messages to display
-var text = ["Infonet HyperText", "Developer Release 46"];
+var text = ["Infonet HyperText", "Developer Release 47"];
 var counter = 0;
 var elem = document.getElementById("LoadingText");
 var inst = setInterval(change, 900);
@@ -450,7 +450,7 @@ function date_time()
 function displayTip(){
   // Select random tip
   console.log('Tip system triggered');
-  var tipArray = ['We have a Discord server', 'Infonet HyperText automatically refreshes', 'There is a hidden code', 'You can be a betatester if you want to', 'You can force a full reload by typing F three times', 'Infonet HyperText can be referred to as IHT', 'Suggestions can be sent to our Discord server', 'IHT will soon be available on GitHub', 'You can check your browser compatibility online', 'Have another tip? Send it over!', 'There is an interactive guide', 'Betatesters get credited', 'Infonet HyperText is Open Source', 'Infonet adjusts itself to your screen', 'Have a question? Send it to Infonet Team!', 'Feature releases are common!'];
+  var tipArray = ['We have a Discord server', 'Infonet HyperText automatically refreshes', 'Check the status at infonet.statuspage.io', 'There is a hidden code', 'You can be a betatester if you want to', 'You can force a full reload by typing F three times', 'Infonet HyperText can be referred to as IHT', 'Suggestions can be sent to our Discord server', 'IHT will soon be available on GitHub', 'You can check your browser compatibility online', 'Have another tip? Send it over!', 'There is an interactive guide', 'Betatesters get credited', 'Infonet HyperText is Open Source', 'Infonet adjusts itself to your screen', 'Have a question? Send it to Infonet Team!', 'Feature releases are common!'];
   var tip = tipArray[Math.floor(Math.random() * tipArray.length)];
   console.log('Random tip selected');
   // Display toast
@@ -647,7 +647,7 @@ matchKeyboardSequence(reload, 1000, () => IHTReloadStage0())
 // Secret Entered
 function kettle() {
   console.log("kettle");
-  var kaudio = new Audio('../Sound/m4r/SetupFinal-b238.m4r');
+  var kaudio = new Audio('../Sound/ad322ffe0a88436296158a80d5d11baa.mp3');
   kaudio.play();
   Swal.fire({
     icon: 'success',
@@ -702,10 +702,15 @@ function kActivateStage1() {
 function kActivateStage2() {
   // Log the activation
   console.log("Kettle Mode Stage 2 running");
-  // Kill any existing WarpSpeed processes if the code has been entered multiple times (currently not functioning)
-  //WarpSpeed.destroy();
+  // Kill any existing audio process
+  document.getElementById('LoadedAudio').pause();
+  //document.getElementById('LoadedAudio').src = "";
   // Log it
   //console.log("Any existing WarpSpeed processes killed");
+  // Set volume to 40%
+  document.getElementById("LoadedAudio").volume = 0.4;
+  // Log it
+  console.log('Volume set');
   // Stop theme script
   clearInterval(theme);
   // Log it
@@ -718,9 +723,64 @@ function kActivateStage2() {
   document.getElementById("InfonetHyperTextLogo").src = "../Images/HTLogo/HTLogoNight.png";
   // Log it
   console.log("Logo color set");
+    // Choose random BG song out of this array
+    var bgmArray = ['Graviton Flux - Singularity',
+    'Renard - Send It To The Moon',
+    'Big Giant Circles - Go For Distance', 
+    'Otis McDonald - Richard\'s Stuff', 
+    'Initial D - Deja Vu', 
+    'Daniwell - Nyanyanyanyanyanyanya!', 
+    'Rick Astley - Never Gonna Give You Up', 
+    'Approaching Nirvana & Big Giant Circles - Reboot', 
+    'Yeah Yeah Yeahs - Heads Will Roll', 
+    'Bag Raiders - Shooting Stars', 
+    'Queen - Don\'t stop me now', 
+    'Illenium - Crawl Outta Love', 
+    'Sub Urban - Cradles', 
+    'Joakim Karud - Good Old Days', 
+    'Nightcore - Rockefeller Street', 
+    'a-ha - Take On Me', 
+    'Andrew Applepie - I\'m so', 
+    'Darude - Sandstorm', 
+    'Harold Faltermeyer - Axel F', 
+    'Noisestorm - Crab Rave', 
+    'Nea - Some Say', 
+    'Owl City - Fireflies', 
+    'Gigi D\'Agostino - L\'Amour Toujours', 
+    'Lemaitre - Axel F', 
+    'Smash Mouth - All Star', 
+    'Naz3nt - Coconut Mall', 
+    'Eiffel 65 - Blue', 
+    'Video Game Remixes - Wii Shop Channel', 
+    'ODESZA - Loyal', 
+    'MagnusTheMagnus - Keep On Lovin\'', 
+    'MagnusTheMagnus - Area', 
+    'The Dirty Tees - More Cowbell', 
+    'United States Marine Band - Regimental Pride March', 
+    'Initial D - Running in The 90s', 
+    'Vicetone & Tony Igy - Astronomia', 
+    'Yamboo - Kalinka', 
+    'Wagner - Ride of the Valkries', 
+    'Astrophysics - Bad Guy Synthwave Remix', 
+    'Astrophysics - Astronomia Synthwave Remix',
+    'Fortnite - Travis Scott Event',
+    'The Living Tombstone - We are number one'];
+    var bgm = bgmArray[Math.floor(Math.random() * bgmArray.length)];
+    var bgmsrc = '../Sound/kettle/'+bgm+'.mp3';
+    // Log it
+    console.log("Random song selected");
+    // Set the source to the random selected song
+    document.getElementById('LoadedAudio').src = bgmsrc;
+    // Log it
+    console.log("Random song set");
+    // Load/Buffer said song
+    document.getElementById('LoadedAudio').load();
+    // Log it
+    console.log("Song buffered");
+    console.log(bgm);
   // Make both iframes more transparent
-  document.getElementById('leftframe').style.opacity = "0.4";
-  document.getElementById('rightframe').style.opacity = "0.4";
+  document.getElementById('leftframe').style.opacity = "0.35";
+  document.getElementById('rightframe').style.opacity = "0.35";
   // Log it
   console.log("Iframe styles set");
   // Remove background
@@ -732,24 +792,12 @@ function kActivateStage2() {
   // Log it
   console.log("WarpSpeed activated");
   // Start next stage
-  setTimeout(kActivateStage3, 500);
+  setTimeout(kActivateStage3, 1500);
+  setTimeout(() => {
+    kActivateStage5(bgm);
+  }, 2000);
 }
 function kActivateStage3() {
-  // Log the activation
-  console.log("Kettle Mode activated. Stage 0 running");
-  // Choose random BG song out of this array
-  var bgmArray = ['../Sound/kettle/1.mp3', '../Sound/kettle/2.mp3', '../Sound/kettle/3.mp3', '../Sound/kettle/4.mp3', '../Sound/kettle/5.mp3', '../Sound/kettle/6.mp3', '../Sound/kettle/7.mp3', '../Sound/kettle/8.mp3', '../Sound/kettle/9.mp3', '../Sound/kettle/10.mp3', '../Sound/kettle/11.mp3', '../Sound/kettle/12.mp3', '../Sound/kettle/13.mp3', '../Sound/kettle/14.mp3', '../Sound/kettle/15.mp3', '../Sound/kettle/16.mp3', '../Sound/kettle/17.mp3', '../Sound/kettle/18.mp3', '../Sound/kettle/19.mp3', '../Sound/kettle/20.mp3', '../Sound/kettle/21.mp3', '../Sound/kettle/22.mp3', '../Sound/kettle/23.mp3', '../Sound/kettle/24.mp3', '../Sound/kettle/25.mp3', '../Sound/kettle/26.mp3', '../Sound/kettle/27.mp3', '../Sound/kettle/28.mp3', '../Sound/kettle/29.mp3', '../Sound/kettle/30.mp3', '../Sound/kettle/31.mp3', '../Sound/kettle/32.mp3'];
-  var bgm = bgmArray[Math.floor(Math.random() * bgmArray.length)];
-  // Log it
-  console.log("Random song selected");
-  // Set the source to the random selected song
-  document.getElementById('LoadedAudio').src = bgm;
-  // Log it
-  console.log("Random song set");
-  // Load/Buffer said song
-  document.getElementById('LoadedAudio').load();
-  // Log it
-  console.log("Song buffered");
   // Play it
   document.getElementById('LoadedAudio').play();
   // Log it
@@ -772,6 +820,30 @@ function kActivateStage4() {
   var IHTReload = setTimeout(IHTReloadStage0, 1800000);
   // Log it
   console.log("Refresh timer set");
+
+}
+function kActivateStage5(bgm) {
+    // Display toast with playing message
+    var bgmmsg = 'Playing: '+bgm;
+    Swal.fire({
+      showClass: {
+        popup: 'fadein'
+      },
+      hideClass: {
+        popup: 'fadeout'
+      },
+      toast: true,
+      position: 'top-end',
+      icon: 'info',
+      title: bgmmsg,
+      showConfirmButton: false,
+      timer: 5000,
+      timerProgressBar: true,
+      onOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
   // Final log
   console.log("Kettle mode job completed. Enjoy!");
 }

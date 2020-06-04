@@ -78,7 +78,7 @@ window.addEventListener( "pageshow", function ( event ) {
 ///////////////////////////////////////////////////////
 
 //setTimeout(startRedirect('Data/Pages/Infonet%20HyperText.html'), 20000);
-setTimeout(() => {
+var autoload = setTimeout(() => {
 	startRedirect('Data/Pages/Infonet%20HyperText.html');
 }, 20000);
 

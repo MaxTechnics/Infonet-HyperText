@@ -3,6 +3,7 @@ function browsers() {
 // Check for Internet Explorer and redirects to an error page
 if(navigator.appName.indexOf("Internet Explorer")!=-1 || navigator.userAgent.match(/Trident.*rv[ :]*11\./))
 {
+  clearTimeout(autoload);
   // This user uses Internet Explorer
   Swal.fire({
     icon: 'error',
@@ -45,6 +46,7 @@ if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
 else if ((verOffset=nAgt.indexOf("MSIE"))!=-1) {
   browserName = "Microsoft Internet Explorer";
   // This user uses Internet Explorer
+  clearTimeout(autoload);
   Swal.fire({
     icon: 'error',
     title:'Your browser isn\'t supported.',
@@ -77,6 +79,7 @@ else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
 // Checks for older Edge versions
 else if ((verOffset=nAgt.indexOf("Edge"))!=-1) {
   browserName = "Edge";
+  clearTimeout(autoload);
   // This user uses Edge (experimental line)
   Swal.fire({
     icon: 'error',
@@ -107,6 +110,7 @@ else
 var ver = navigator.userAgent;
 if (ver.indexOf('Edge') !== -1)
 {
+  clearTimeout(autoload);
   Swal.fire({
     icon: 'error',
     title:'Your browser isn\'t supported.',

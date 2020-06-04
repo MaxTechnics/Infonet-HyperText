@@ -8,7 +8,7 @@ We hope this project sparks interest in coding with someone. It's been a fun jou
 
 ## Installation and usage
 
-Download the master branch or release .zip file, extract it to where you want to install it and open Infonet Console.html. Select any mode or create a new one and you're done.
+Download the master branch or release .zip file, extract it to where you want to install it and open index.html. Select any mode or create a new one and you're done.
 
 ## Features
 Infonet HyperText is highly customizable and adjustable. All code is well documented making for easy learning and customization.
