@@ -1,4 +1,6 @@
 # Infonet HyperText
+### Warning
+This project has been put on hold for a little while due to the exam period. Be sure to expect a big release around July!
   
 ## Goal
 
