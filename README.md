@@ -13,14 +13,18 @@ Download the master branch or release .zip file, extract it to where you want to
 ## Modes
 
 You can set multiple parts using the console, or by naturally adding parameters in the URL bar. Here's a quick rundown of the parameters:
-- ``?mode=default`` or no parameter: Default mode
-- ``?mode=afs1``: April Fools Stage 1
-- ``?mode=afs2``: April Fools Stage 2
-- ``?mode=xmos``: Chrysostomos Mode
-- ``?darkmode=true``: Enable the new Darkmode
-- ``?darkmode=false`` or no parameter: Disable Darkmode
-- ``?framemode=teacher``: Change the left frame to a teacher focussed address (no page has been made yet)
-- ``?framemode=contact``: Change the left frame to a parental contact focussed address (no page has been made yet)
+|  Usable  |          Parameter          |                           Function                           |
+|----------|-----------------------------|--------------------------------------------------------------|
+|    ✅    | ``?mode=default`` or none   | Default mode                                                 |
+|    ✅    | ``?mode=afs1``              | April Fools Stage 1                                          |
+|    ✅    | ``?mode=afs2``              | April Fools Stage 2                                          |
+|    ✅    | ``?mode=xmos``              | Chrysostomos Mode                                            |
+|    ✅    | ``?darkmode=true``          | Enable the new Darkmode                                      |
+|    ✅    | ``?darkmode=false`` or none | Disable Darkmode                                             |
+|    ⬜️    | ``?framemode=teacher``      | Change the left frame to a teacher focussed address          |
+|    ⬜️    | ``?framemode=contact``      | Change the left frame to a parental contact focussed address |
+|    ⬜️    | ``?beta=true``              | Enable the beta version for testing                          |
+|    ⬜️    | ``?beta=false`` or none     | Disable betatesting/beta version                             | 
 
 You can combine multiple parameters using ``&``: ``Infonet%20HyperText.html?mode=afs1&darkmode=true``. The order of parameters doesn't matter.
 
