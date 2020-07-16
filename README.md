@@ -42,13 +42,16 @@ We are aware of some bugs that can occur. If you think you found a new one or yo
 ## Compatibility
 We have not tested all browsers yet, so you might get a notification that testing is still ongoing on your browser of choice.
 Supported browsers:
- - [x] Safari:            Fully supported
- - [x] Firefox:           Fully supported
- - [x] Chrome:            Fully supported
- - [x] Chromium:          Fully supported
- - [ ] Opera:             Untested
- - [x] Edge:              While working, it is much slower and not recommended. (Both Edge and Edge Legacy)
- - [ ] Internet Explorer: Not supported
+
+|    |      Browser      |                                       Notes                                       |
+|----|-------------------|-----------------------------------------------------------------------------------|
+| ✅ | Safari            | Fully supported                                                                   |
+| ✅ | Firefox           | Fully supported                                                                   |
+| ✅ | Chrome            | Fully supported                                                                   |
+| ✅ | Chromium          | Fully supported                                                                   |
+| ⬜️ | Opera             | Untested                                                                          |
+| ✅ | Edge              | While working, it is much slower and not recommended. (Both Edge and Edge Legacy) |
+| ⬜️ | Internet Explorer | Not supported                                                                     |
 
 ## Used libraries/tools
 ### Tools
