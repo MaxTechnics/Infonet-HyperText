@@ -122,7 +122,7 @@ label.field .psuedo_select .selected {
 }
 /* Box of options */
 label.field .psuedo_select ul {
-  background: rgba(0, 121, 235, 0.50);
+  background: rgba(121, 199, 72, 0.5);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   display: block;
   height: 0;
@@ -150,13 +150,13 @@ label.field .deselect {
   z-index: -1;
 }
 label.field.focused {
-  color: #007BED;
+  color: #79c748;
 }
 label.field.focused .psuedo_select {
-  border-color: #007BED;
+  border-color: #79c748;
 }
 label.field.focused .psuedo_select::after {
-  background: url("data:image/svg+xml;utf8,<svg fill='#007BED' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'> <path d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/> <path d='M0-.75h24v24H0z' fill='none'/> </svg>"), no-repeat;
+  background: url("data:image/svg+xml;utf8,<svg fill='#79c748' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'> <path d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/> <path d='M0-.75h24v24H0z' fill='none'/> </svg>"), no-repeat;
 }
 label.field.focused .psuedo_select ul {
   opacity: 1;

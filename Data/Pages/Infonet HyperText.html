@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<!--
-  ___         __                  _
- |_ _| _ _   / _| ___  _ _   ___ | |_
-  | | | ' \ |  _|/ _ \| ' \ / -_)|  _|
- |___||_||_||_|  \___/|_||_|\___| \__|
-
-  _  _                       _____           _
- | || | _  _  _ __  ___  _ _|_   _|___ __ __| |_
- | __ || || || '_ \/ -_)| '_| | | / -_)\ \ /|  _|
- |_||_| \_, || .__/\___||_|   |_| \___|/_\_\ \__|
-        |__/ |_|
--->
+<!------------------------------------------------------>
+<!--  ___         __                  _               -->
+<!-- |_ _| _ _   / _| ___  _ _   ___ | |_             -->
+<!--  | | | ' \ |  _|/ _ \| ' \ / -_)|  _|            -->
+<!-- |___||_||_||_|  \___/|_||_|\___| \__|            -->
+<!------------------------------------------------------>
+<!--  _  _                       _____           _    -->
+<!-- | || | _  _  _ __  ___  _ _|_   _|___ __ __| |_  -->
+<!-- | __ || || || '_ \/ -_)| '_| | | / -_)\ \ /|  _| -->
+<!-- |_||_| \_, || .__/\___||_|   |_| \___|/_\_\ \__| -->
+<!--        |__/ |_|                                  -->
+<!------------------------------------------------------>
 <html>
 <head>
 <!-- Define the characterset -->
@@ -57,7 +57,7 @@
 <meta name="application-name" content="Infonet HyperText">
 
 <!-- Define the favicon for Touch Bar -->
-<link rel="manifest" href="Infonet%20HyperText%20Extras/IHT.webmanifest">
+<link rel="manifest" href="./Infonet%20HyperText%20Extras/IHT.webmanifest">
 <link rel="mask-icon" href="../Images/Glyph/safari-pinned-tab.svg" color="#79c748">
 <meta name="theme-color" content="#79c748">
 
@@ -78,43 +78,63 @@
 <meta name="msapplication-task" content="name=Infonet HyperText;icon-uri=../Images/Glyph/HyperTextLogo3232.png" />
 
 <!-- Import the stylesheet -->
-<link rel="stylesheet" type="text/css" href="Infonet%20HyperText%20Extras/IHT.css">
+<link rel="stylesheet" type="text/css" href="./Infonet%20HyperText%20Extras/IHT.css">
 
 <!-- Import the scripts -->
-<script type="text/javascript" src="Infonet%20HyperText%20Extras/IHT.js"></script>
+<script type="text/javascript" src="./Infonet%20HyperText%20Extras/version.js"></script>
+<script type="text/javascript" src="./Infonet%20HyperText%20Extras/compatibility.js"></script>
 <script type="text/javascript" src="https://infonet-update.netlify.app/update.js"></script>
 
 <!-- Import SweetAlert -->
-<script src="Infonet%20HyperText%20Extras/Sweetalert2/sweetalert2@9.min.js"></script>
-<link id="swal" rel="stylesheet" href="Infonet%20HyperText%20Extras/Sweetalert2/default.css">
+<script src="./Infonet%20HyperText%20Extras/Sweetalert2/sweetalert2@9.min.js"></script>
+<link id="swal" rel="stylesheet" href="./Infonet%20HyperText%20Extras/Sweetalert2/default.css">
 
 <!-- Import WarpSpeed -->
-<script type="text/javascript" src="Infonet%20HyperText%20Extras/WarpSpeed/warpspeed.min.js"></script>
+<script type="text/javascript" src="./Infonet%20HyperText%20Extras/WarpSpeed/warpspeed.min.js"></script>
 </head>
 
-<body onload="date_time();resize();StartInfonetHyperText();" class="Background" background="../Images/Background/12.png">
+<body onload="startInfonetHyperText();" class="Background">
 
+<!-- Overlay that is used for transitons and reloading -->
 <div id="overlay"></div>
 
-<div style="position:fixed; z-index:0; top:0; left:0; width:100%; height:100%;">
+<!-- WarpSpeed canvas for the secret code backgound -->
+<div style="position:fixed; z-index:-2; top:0; left:0; width:100%; height:100%;">
   <canvas id="kettlebg" style="width:100%; height:100%;"></canvas>
 </div>
 
-<!-- Show the loader -->
-<div id="preloader" class="lfade">
-<div id="loader"></div>
+<!-- Loading screen -->
+<div class="ipl-progress-indicator" id="ipl-progress-indicator">
+  <div class="ipl-progress-indicator-head">
+    <div class="first-indicator"></div>
+    <div class="second-indicator"></div>
+  </div>
+  <div class="insp-logo-frame">
+    <img width="112" class="insp-logo-frame-img" height="112" src="../Images/Glyph/HyperTextLogo512512.png"></img>
+  </div>
 </div>
-
-<!-- Show info while loading -->
-<h2 id="LoadingText" class="lfade">Just a sec</h2>
 
 <!-- Play audio while loading -->
 <audio id="LoadingAudio" autoplay>
   <source src="../Sound/m4r/HomePodReadyToSetUp-b238.mp3" preload="auto" type="audio/mpeg">
 </audio>
 
+<!-- Right Click Menu -->
+<div id="menu" class="menu">
+  <nav id="nav" class="main-nav" role="navigation">
+    <ul>
+      <li><a id="menuopt1"><span>Close Menu</span></a></li>
+      <li><a id="menuopt2"><span>Reload</span></a></li>
+      <li><a id="menuopt3"><span id="darkmodetoggle">Darkmode not working right now</span></a></li>
+      <li><a id="menuopt4"><span>About Infonet HyperText</span></a></li>
+      <li><a id="menuopt5"><span>Report an issue</span></a></li>
+      <li><a id="menuopt6"><span>Return to Console</span></a></li>
+    </ul>
+  </nav>
+</div>
+
 <!-- Page content is in this div -->
-<div id="PageContentDiv" class="fadein">
+<div id="PageContentDiv">
 
 <!-- Play audio when loading is complete -->
 <audio id="LoadedAudio">
@@ -131,7 +151,7 @@
 <div id="Header">
 
 <!-- Display Infonet HyperText logo and define it as hyperlink -->
-<div id="LogoDiv"><img id="InfonetHyperTextLogo" src="../Images/HTLogo/HTLogoDay.png" title="Greetings from Infonet Team" onclick="logoClicked()"></div>
+<div id="LogoDiv"><img id="InfonetHyperTextLogo" src="../Images/HTLogo/HTLogoDay.png" title="Greetings from Infonet Team"></div>
 
 <!-- Display time and date -->
 <div class="ClockDiv"><h2 id="Time">ClockScript Failed</h2></div>
@@ -140,12 +160,13 @@
 <div class="AppletDiv"></div>
 </div>
 
+<!-- Invisible div that prevents accidental clicking of the iframes -->
 <div id="noclick"></div>
 
 <!-- Display iframes -->
 <div>
 <!-- This is the iframe for the absent teacher element (left part) -->
-<iframe id="leftframe" class="iframe leftframe" src="https://heuristic-shannon-428b24.netlify.app/"  frameborder="0" scrolling="no" align="left">
+<iframe id="leftframe" class="iframe leftframe" src="https://heuristic-shannon-428b24.netlify.app/" frameborder="0" scrolling="no" align="left">
 No iframes :-(</iframe>
 
 <!-- This is the iframe for the slider (right part) -->
@@ -153,5 +174,7 @@ No iframes :-(</iframe>
 No iframes :-(</iframe>
 </div>
 </div>
+
+<script type="text/javascript" src="./Infonet%20HyperText%20Extras/IHT.js"></script>
 </body>
 </html>

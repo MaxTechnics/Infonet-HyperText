@@ -1,3 +1,19 @@
+function unTested() {
+  Swal.fire({
+    icon: 'warning',
+    title:'Ongoing testing',
+    text: 'Testing for this browser hasn\'t finished yet. Continue at your own risk!',
+    showConfirmButton: false,
+    confirmButtonText: 'Close',
+    timer: 5000,
+    timerProgressBar: true,
+    allowOutsideClick: false,
+    allowEscapeKey: false,
+    allowEnterKey: false
+     })
+  }
+
+
 setTimeout(browsers, 1000);
 function browsers() {
 // Check for Internet Explorer and redirects to an error page
@@ -28,18 +44,7 @@ var nameOffset,verOffset,ix;
 if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
   browserName = "Opera";
   // This user uses Opera
-  Swal.fire({
-    icon: 'warning',
-    title:'Opera support not tested',
-    text: 'We haven\'t finished testing Opera yet',
-    showConfirmButton: false,
-    confirmButtonText: 'Close',
-    timer: 10000,
-    timerProgressBar: true,
-    allowOutsideClick: false,
-    allowEscapeKey: false,
-    allowEnterKey: false
-   })
+unTested();
   
 }
 // Checks for old Internet Explorer
@@ -79,26 +84,17 @@ else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
 // Checks for older Edge versions
 else if ((verOffset=nAgt.indexOf("Edge"))!=-1) {
   browserName = "Edge";
-  clearTimeout(autoload);
   // This user uses Edge (experimental line)
-  Swal.fire({
-    icon: 'error',
-    title:'Your browser isn\'t supported.',
-    text: 'Edge isn\'t supported by Infonet HyperText.',
-    showConfirmButton: false,
-    confirmButtonText: 'Close',
-    allowOutsideClick: false,
-    allowEscapeKey: false,
-    allowEnterKey: false
-  })
+unTested();
 }
 else
 {
   Swal.fire({
     icon: 'warning',
     title:'We couldn\'t determine your browser',
-    text: 'Chances are that your browser isn\'t supported. Continiue at your own risk.',
-    showConfirmButton: false,
+    text: 'Chances are that your browser isn\'t supported. Continue at your own risk.',
+    showConfirmButton: true,
+    timer: 5000,
     confirmButtonText: 'Close',
     allowOutsideClick: false,
     allowEscapeKey: false,
@@ -111,16 +107,8 @@ var ver = navigator.userAgent;
 if (ver.indexOf('Edge') !== -1)
 {
   clearTimeout(autoload);
-  Swal.fire({
-    icon: 'error',
-    title:'Your browser isn\'t supported.',
-    text: 'Edge isn\'t supported by Infonet HyperText.',
-    showConfirmButton: false,
-    confirmButtonText: 'Close',
-    allowOutsideClick: false,
-    allowEscapeKey: false,
-    allowEnterKey: false
-  })
+unTested();
+
 }
 else
 {

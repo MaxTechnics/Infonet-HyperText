@@ -1,6 +1,4 @@
 # Infonet HyperText
-### Warning
-This project has been put on hold for a little while due to the exam period. Be sure to expect a big release around July!
   
 ## Goal
 
@@ -12,13 +10,35 @@ We hope this project sparks interest in coding with someone. It's been a fun jou
 
 Download the master branch or release .zip file, extract it to where you want to install it and open index.html. Select any mode or create a new one and you're done.
 
+## Modes
+
+You can set multiple parts using the console, or by naturally adding parameters in the URL bar. Here's a quick rundown of the parameters:
+|  Usable  |          Parameter          |                           Function                           |
+|----------|-----------------------------|--------------------------------------------------------------|
+|    ✅    | ``?mode=default`` or none   | Default mode                                                 |
+|    ✅    | ``?mode=afs1``              | April Fools Stage 1                                          |
+|    ✅    | ``?mode=afs2``              | April Fools Stage 2                                          |
+|    ✅    | ``?mode=xmos``              | Chrysostomos Mode                                            |
+|    ✅    | ``?darkmode=true``          | Enable the new Darkmode                                      |
+|    ✅    | ``?darkmode=false`` or none | Disable Darkmode                                             |
+|    ⬜️    | ``?framemode=teacher``      | Change the left frame to a teacher focussed address          |
+|    ⬜️    | ``?framemode=contact``      | Change the left frame to a parental contact focussed address |
+|    ⬜️    | ``?beta=true``              | Enable the beta version for testing                          |
+|    ⬜️    | ``?beta=false`` or none     | Disable betatesting/beta version                             | 
+
+You can combine multiple parameters using ``&``: ``Infonet%20HyperText.html?mode=afs1&darkmode=true``. The order of parameters doesn't matter.
+
+## The all-new menu
+
+If you are using Infonet HyperText in fullscreen or a kiosk, changing settings is now much easier! Just right-click or press space to open the menu.
+
 ## Features
 Infonet HyperText is highly customizable and adjustable. All code is well documented making for easy learning and customization.
 If there's a feature you would like to disable, you can remove it from the code, if there are any problems in doing so, just open an issue and I'll help.
 There's also an interactive guide based on 2 projects by [Codrops](https://github.com/codrops). Please note that this is Dutch only!
 
 ## Contributing
-Currently, we are open for the addition of new features. If you'd like a new feature and we think it fit's the scheme, you can open an issue.
+Currently, we are open for the addition of new features. If you'd like a new feature and we think it fit's the scheme, you can open an issue or pull request.
 
 ## Bugs
 We are aware of some bugs that can occur. If you think you found a new one or you can help to fix an existing bug, please open an issue or pull request.
@@ -26,17 +46,20 @@ We are aware of some bugs that can occur. If you think you found a new one or yo
 ## Compatibility
 We have not tested all browsers yet, so you might get a notification that testing is still ongoing on your browser of choice.
 Supported browsers:
- - [x] Safari
- - [x] Firefox
- - [x] Chrome
- - [x] Chromium
- - [ ] Opera (Untested)
- - [ ] Edge (Edge is not supported, New edge is untested)
- - [ ] Internet Explorer
+
+|    |      Browser      |                                       Notes                                       |
+|----|-------------------|-----------------------------------------------------------------------------------|
+| ✅ | Safari            | Fully supported                                                                   |
+| ✅ | Firefox           | Fully supported                                                                   |
+| ✅ | Chrome            | Fully supported                                                                   |
+| ✅ | Chromium          | Fully supported                                                                   |
+| ✅ | Opera             | Supported, not recommended                                                                          |
+| ✅ | Edge              | While working, it is much slower and not recommended. (Both Edge and Edge Legacy) |
+| ⬜️ | Internet Explorer | Not supported                                                                     |
 
 ## Used libraries/tools
 ### Tools
-- [Brackets](https://github.com/adobe/brackets)
+- [Brackets](https://github.com/adobe/brackets) (no longer used)
 - [Visual Studio Code](https://github.com/microsoft/vscode)
 ### Libraries
 - [Bitday](https://www.reddit.com/r/wallpapers/comments/1tqe9k/update_new_version_of_the_8bit_day_wallpaper_set/)
