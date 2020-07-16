@@ -38,7 +38,7 @@ If there's a feature you would like to disable, you can remove it from the code,
 There's also an interactive guide based on 2 projects by [Codrops](https://github.com/codrops). Please note that this is Dutch only!
 
 ## Contributing
-Currently, we are open for the addition of new features. If you'd like a new feature and we think it fit's the scheme, you can open an issue.
+Currently, we are open for the addition of new features. If you'd like a new feature and we think it fit's the scheme, you can open an issue or pull request.
 
 ## Bugs
 We are aware of some bugs that can occur. If you think you found a new one or you can help to fix an existing bug, please open an issue or pull request.
@@ -53,7 +53,7 @@ Supported browsers:
 | ✅ | Firefox           | Fully supported                                                                   |
 | ✅ | Chrome            | Fully supported                                                                   |
 | ✅ | Chromium          | Fully supported                                                                   |
-| ⬜️ | Opera             | Untested                                                                          |
+| ✅ | Opera             | Supported, not recommended                                                                          |
 | ✅ | Edge              | While working, it is much slower and not recommended. (Both Edge and Edge Legacy) |
 | ⬜️ | Internet Explorer | Not supported                                                                     |
 
