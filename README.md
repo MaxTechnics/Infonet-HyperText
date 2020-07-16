@@ -24,6 +24,10 @@ You can set multiple parts using the console, or by naturally adding parameters 
 
 You can combine multiple parameters using ``&``: ``Infonet%20HyperText.html?mode=afs1&darkmode=true``. The order of parameters doesn't matter.
 
+## The all-new menu
+
+If you are using Infonet HyperText in fullscreen or a kiosk, changing settings is now much easier! Just right-click or press space to open the menu.
+
 ## Features
 Infonet HyperText is highly customizable and adjustable. All code is well documented making for easy learning and customization.
 If there's a feature you would like to disable, you can remove it from the code, if there are any problems in doing so, just open an issue and I'll help.
