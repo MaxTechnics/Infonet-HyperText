@@ -56,7 +56,7 @@ if (framemode == 'frame1') {
 else if (framemode == 'frame2') {
 	document.getElementById('leftframe').src = 'https://page2.com/';
 }
- else if (framemode == 'frame3') {
+else if (framemode == 'frame3') {
 	document.getElementById('leftframe').src = 'https://page3.com/';
 }
 else {
