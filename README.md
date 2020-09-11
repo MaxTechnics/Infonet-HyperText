@@ -23,14 +23,12 @@ You can set multiple parts using the console, or by naturally adding parameters 
 |    ✅    | ``?darkmode=false`` or none | Disable Darkmode                                             |
 |    ⬜️    | ``?framemode=teacher``      | Change the left frame to a teacher focussed address          |
 |    ⬜️    | ``?framemode=contact``      | Change the left frame to a parental contact focussed address |
-|    ⬜️    | ``?beta=true``              | Enable the beta version for testing                          |
-|    ⬜️    | ``?beta=false`` or none     | Disable betatesting/beta version                             | 
 
-You can combine multiple parameters using ``&``: ``Infonet%20HyperText.html?mode=afs1&darkmode=true``. The order of parameters doesn't matter.
+You can combine multiple parameters using ``&``: ``main.html?mode=afs1&darkmode=true``. The order of parameters doesn't matter.
 
 ## The all-new menu
 
-If you are using Infonet HyperText in fullscreen or a kiosk, changing settings is now much easier! Just right-click or press space to open the menu.
+If you are using Infonet HyperText in fullscreen or a kiosk, changing settings is now much easier! Just right-click, press space or click the logo to open the menu.
 
 ## Features
 Infonet HyperText is highly customizable and adjustable. All code is well documented making for easy learning and customization.
