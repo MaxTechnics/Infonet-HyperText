@@ -65,4 +65,4 @@ Supported browsers:
 - [WarpSpeed.js](https://github.com/adolfintel/warpspeed)
 
 ## License
-[Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/)
+[CC BY NC SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
