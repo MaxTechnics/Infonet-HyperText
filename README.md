@@ -66,3 +66,8 @@ Supported browsers:
 
 ## License
 [CC BY NC SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+## Like it?
+Consider supporting me:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A33KOGW)
