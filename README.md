@@ -1,8 +1,14 @@
 # Infonet HyperText
+
+## ⚠️ This project is no longer being maintained. ⚠️
+
+Infonet itself has grown beyond HyperText. Rather than just a front end wrapper, it has become an entire platform. HyperText has merged with said rewrite.
+
+I decided to open source the old code because i am fairly sure it won't hurt the new system's image/'sales'.
   
 ## Goal
 
-When I started development, I didn't know anything about coding (HTML, CSS, JavaScript...). That's why it took me about a year to make the base version. With the help of many school students, we cleaned up the code, made everything more efficient and implemented some fun features.
+When I started development, I didn't know anything about coding (HTML, CSS, JavaScript...). That's why it took me about a year to learn and convince myself to make the base version. With the help of many school students, we cleaned up the code, made everything more efficient and implemented some fun features.
 
 We hope this project sparks interest in coding with someone. It's been a fun journey and we hope someone else will make something great when they get inspiration from this project.
 
